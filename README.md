@@ -1,6 +1,6 @@
 # react-native-integration-poc
 
-Following https://reactnative.dev/docs/integration-with-existing-apps
+We are following this tutorial - https://reactnative.dev/docs/integration-with-existing-apps
 
 Current Progress = https://reactnative.dev/docs/integration-with-existing-apps#3-configure-permissions-for-development-error-overlay
 
