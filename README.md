@@ -8,6 +8,6 @@ Current Progress = https://reactnative.dev/docs/integration-with-existing-apps#3
 
 https://prospermarketplace.atlassian.net/wiki/spaces/SFER/pages/22767435912/React+React+Native+Proof+of+Concept+for+Partial+Integration+into+Mobile+Applications
 
-# Slack - Come talk to us
+# Slack - Come talk to us (#react-native-brainstorm as of Oct 2022)
 
 https://prospermarketplace.slack.com/archives/C045730937W
