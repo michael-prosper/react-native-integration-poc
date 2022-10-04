@@ -1,3 +1,18 @@
+// TODO: Try this if below doesn't work
+// allprojects {
+//     repositories {
+//         maven {
+//             // All of React Native (JS, Android binaries) is installed from npm
+//             url "$rootDir/../node_modules/react-native/android"
+//         }
+//         maven {
+//             // Android JSC is installed from npm
+//             url("$rootDir/../node_modules/jsc-android/dist")
+//         }
+//     }
+// }
+
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -10,6 +25,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        maven {
+            url "$rootDir/../node_modules/react-native/android"
+        }
+        maven {
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
     }
 }
 rootProject.name = "react-native-integration-poc"
