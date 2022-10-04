@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.react_native_integration_poc">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+<!--    TODO: ADd debug manifest to enable cleartest traffic-->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Reactnativeintegrationpoc"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -23,6 +28,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <!--            TODO: determine why AndroidManifest cannot resolve MyReactAc  -->
+        <activity
+            android:name=".MyReactActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
     </application>
 

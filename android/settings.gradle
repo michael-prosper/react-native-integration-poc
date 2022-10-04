@@ -36,3 +36,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "react-native-integration-poc"
 include ':app'
+
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
